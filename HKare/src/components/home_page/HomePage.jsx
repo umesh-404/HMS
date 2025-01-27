@@ -12,7 +12,7 @@ const HomePage = () => {
           <a href="#">PATIENT</a>
         </div>
         <div className="STAFF">
-          <a href="#">STAFF</a>
+          <a href="#">STAFFFFFFFF</a>
         </div>
       </div>
     </div>
