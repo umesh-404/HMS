@@ -1,61 +1,187 @@
-body
-{
-    display: flex;
+body {
     background: #4A90E2;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
 }
 
-.home-container
-{
+.header {
+    display: flex;
+    align-items: center;
+    background-color: #FFFFFF;
+    color: white;
+    padding: 25px 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    height: 50px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    height: 50px;
+}
+
+.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 100%;
+    flex-direction: column;
+}
+
+.login-buttons {
+    display: flex;
+    gap: 175px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.DOCTOR {
+    width: 300px;
+    height: 400px;
+    padding: 20px;
+    border: 2px solid white;
+    background: white;
+    color: #4A4A4A;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: transform 0.6s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.home-container .login-buttons {
-    display: flex;
-    gap: 400px;
+.DOCTOR .label {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 40px;
+    font-weight: bold;
 }
 
-.home-container .login-buttons a
-{
-    padding: 20px;
-    color: white;
+.DOCTOR:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
 }
 
-.home-container .login-buttons a:hover
-{
-    background: #F4F4F4;
+.DOCTOR:hover .label {
     color: black;
 }
 
-.home-container .login-buttons .DOCTOR
-{
+.PATIENT {
+    width: 300px;
+    height: 400px;
+    padding: 20px;
     border: 2px solid white;
+    background: white;
+    color: #4A4A4A;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: transform 0.6s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
-.home-container .login-buttons .PATIENT
-{
+.PATIENT .label {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.PATIENT:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.PATIENT:hover .label {
+    color: black;
+}
+
+.STAFF {
+    width: 300px;
+    height: 400px;
+    padding: 20px;
     border: 2px solid white;
+    background: white;
+    color: #4A4A4A;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: transform 0.6s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
-.home-container .login-buttons .STAFF
-{
-    border: 2px solid white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.STAFF .label {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 40px;
+    font-weight: bold;
 }
 
-.home-container .login-buttons div {
-    transition: transform 0.6s ease;
+.STAFF:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
 }
 
-.home-container .login-buttons div:hover {
-    transform: scale(1.3);
+.STAFF:hover .label {
+    color: black;
+}
+
+.DOCTOR .card-image {
+    width: 300px; 
+    height: 300px;
+    object-fit: contain;
+    margin-bottom: auto;
+}
+
+.STAFF .card-image {
+    width: 300px;
+    height: 350px;
+    object-fit: contain;
+    margin-bottom: auto;
+}
+
+.PATIENT .card-image {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    margin-bottom: auto;
+}
+
+.footer {
+    font-size: 9px;
+    text-align: center;
+    padding: 10px;
+    background-color: white;
+    color: #4A4A4A;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
 }
